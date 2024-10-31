@@ -4,11 +4,13 @@
 
 [INCUBATOR HUB HR DATA ANALYSIS TRACKER](#incubator-hub-hr-data-analysis-tracker)
 
+[CAPSTONE SALES DATA PROJECT](#capstone-sales-data-project)
 
 ## POWER BI PROJECT
 ---
 
 ### INCUBATOR HUB HR DATA ANALYSIS TRACKER
+
 ![power bi 1](https://github.com/user-attachments/assets/328d66dd-8664-4aaf-918c-3f7fba4de661)
 A slicer was created to input the various educational field same was also done for the various job roles.
 - The work was titled Incubator Hub Hr Data Analysis Tracker
@@ -65,8 +67,11 @@ A slicer was created to input the various educational field same was also done f
 ![power bi 17](https://github.com/user-attachments/assets/6cb9d67a-17f7-487d-a213-2d0673523690)
 - Sum of Attrition count under Cf age band over 55 is 11. Sum of attrition count by Gender. Male 8, Female 3, attrition count for the Department of sales is 2, Hr 0, R&D 9, attrition count by educational field in life science is 4,medical 4, marketing 1, technical degree 2, other 0 , human resources 0 and total number of Employees shows 69, total number of attrition 11, total number of current employee 58, attrition rate 15.94%, their average age 57,for the sum of attrition by age band over 55 (11) male 8,female 3.
 
+![power bi 18](https://github.com/user-attachments/assets/fb95f920-6cbb-43cd-90f1-1cd4b000b1ac)
+final visualization
 
 
-
+### CAPSTONE SALES DATA PROJECT
+![power bi capstone sales 1](https://github.com/user-attachments/assets/bb67a378-5798-4656-807a-83d04efce8ae)
 
 
