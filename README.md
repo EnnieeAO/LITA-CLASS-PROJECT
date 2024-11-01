@@ -172,19 +172,19 @@ Sum of Quantity 20k,
 Total order 2,483,
 Percentage sales : 23.13%
 
-Total sale in East by products
+2. Total sale in East by products
 Hat 107,175,
 Jacket 103,950,
 Shirt 237,600,
 Shoes 37,200,
 
-Average sales in East by product
+3. Average sales in East by product
 Hat 107.50,
 Jacket 210,
 Shirt 480,
 Shoes 75,
 
-Count of sales in East by products
+4. Count of sales in East by products
 Hat 997,
 Jacket 495,
 Shirt 495,
@@ -198,17 +198,17 @@ Sum of Quantity 12k,
 Total order 2,481,
 Percentage sales : 18.42%
 
-Total sale in North by products
+2. Total sale in North by products
 Hat 34,720,
 Jacket 104, 280,
 Shirt 248,000,
 
-Average sales in North by product
+3. Average sales in North by product
 Hat 70,
 Jacket 105.02,
 Shirt 250,
 
-Count of sales in North by products
+4. Count of sales in North by products
 Hat 496,
 Jacket 993,
 Shirt 992
@@ -221,17 +221,17 @@ Sum of Quantity 24k,
 Total order 2,480,
 Percentage sales : 44.16%,
 
-Total sale in south by products
+2. Total sale in south by products
 Gloves 247,600,
 Shoes 546,300,
 Socks 133,920,
 
-Average sales in South by product
+3. Average sales in South by product
 Gloves 249.85,
 Shoes 550.15,
 Socks 270
 
-Count of sales in South by products
+4. Count of sales in South by products
 Gloves 991,
 Shoes 993,
 Socks 496,
@@ -244,19 +244,19 @@ Sum of Quantity 11k,
 Total order 2,477,
 Percentage sales : 14.29%,
 
-Total sale in West by products
+2. Total sale in West by products
 Gloves 49,300,
 Hat 174,300,
 Shoes 29,820,
 Socks 46,865,
 
-Average sales in West by product
+3. Average sales in West by product
 Gloves 100,
 Hat 350,
 Shoes 59.88,
 Socks 47.43,
 
-Count of sales in West by products
+4. Count of sales in West by products
 Gloves 493,
 Hat 498,
 Shoes 498,
@@ -277,11 +277,11 @@ May 6,722,629,
 July 6,782,294,
 September 3,365,221,
 
-Cancellations
+2. Cancellations
 False:23,683,493,
 True : 10,093,242,
 
-Cancellations by region 
+3. Cancellations by region 
 East false 16,958,763 (50.21%), 
 North false 6,724,730(19.91%),
 North true 10,093,242 (29.88%),
@@ -295,11 +295,11 @@ February 6,752,643,
 June 6,761,882,
 October 3,384,539,
 
-Cancellations
+2. Cancellations
 False:6,772,264,
 True : 10,126,800,
 
-Cancellations by region 
+3. Cancellations by region 
 South false 6,722,264(40.07%),
 South true 10,126,800 (59.93%),
 
@@ -312,10 +312,75 @@ April 6,711,511,
 August 6,754,577,
 December 3,398,288,
 
-Cancellations
+2. Cancellations
 False:6,752,970,
 True : 10,111,406,
 
-Cancellations by region 
+3. Cancellations by region 
 West false 6,752,970 (40.04%), 
 West true 10,111,406 (59.96%),
+
+##### Revenue by Region
+- East
+Total customer 8,488,
+Total revenue 17m,
+Subcription Trends by month
+March: 6, 739,025,
+July: 6,782,294,
+November: 3,437,444,
+
+2. Cancellation by subscription type
+Basic :false 16,958,763,
+
+3. East cancellation is false 16,958,763(100%),
+
+- North 
+Total customer 8,433,
+Total revenue 17m,
+Subcription Trends by month
+January: 6, 730,122,
+May: 6,722,629,
+September: 3,365,221,
+
+2. Cancellation by subscription type
+Basic :
+false 6,724,730,
+True 10,093,242,
+
+3. North cancellation 
+false 6,724,730(39.99%),
+True 10,093,242(60.01%).
+
+- South 
+Total customer 8,446,
+Total revenue 17m,
+Subcription Trends by month
+February: 6, 752,643,
+June: 6,761,882,
+October: 3,384,539,
+
+2. Cancellation by subscription type
+Premium :
+false 6,772,264,
+True 10,126,800.
+
+3. South cancellation  by revenue 
+false 6,772,264(40.07%),
+True 10, 126,800(59.93%).
+
+- West
+Total customer 8,420,
+Total revenue 17m,
+Subcription Trends by month
+April: 6, 711,511,
+August: 6,754,577,
+December: 3,398,288.
+
+2. Cancellation by subscription type
+Standard 
+false 6,752,970,
+True 10,111,406.
+
+3. West cancellation 
+false 6,752,970(40.04%),
+True 10,111,406(59.96%).
