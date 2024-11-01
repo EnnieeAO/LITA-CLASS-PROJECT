@@ -264,7 +264,58 @@ Socks 988,
 
 
 
-### CAPSTONE CUSTOMER DATA PROJECT
+#### CAPSTONE CUSTOMER DATA PROJECT
+##### Revenue by Subscription Type
+
+- Basic
+Total customers 16.92k,
+Total revenue 34million, 
+Subscription trends,
+January 6,730,122,
+March 6,739,025,
+May 6,722,629,
+July 6,782,294,
+September 3,365,221,
+
+Cancellations
+False:23,683,493,
+True : 10,093,242,
+
+Cancellations by region 
+East false 16,958,763 (50.21%), 
+North false 6,724,730(19.91%),
+North true 10,093,242 (29.88%),
 
 
+- Premium 
+Total customers 8,446,
+Total revenue 17million, 
+Subscription trends,
+February 6,752,643,
+June 6,761,882,
+October 3,384,539,
 
+Cancellations
+False:6,772,264,
+True : 10,126,800,
+
+Cancellations by region 
+South false 6,722,264(40.07%),
+South true 10,126,800 (59.93%),
+
+
+- Standard 
+Total customers 8,420,
+Total revenue 17million ,
+Subscription trends
+April 6,711,511,
+August 6,754,577,
+December 3,398,288,
+
+Cancellations
+False:6,752,970,
+True : 10,111,406,
+
+Cancellations by region 
+West false 6,752,970 (40.04%), 
+West true 10,111,406 (59.96%),
