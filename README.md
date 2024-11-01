@@ -6,6 +6,8 @@
 
 [CAPSTONE SALES DATA PROJECT](#capstone-sales-data-project)
 
+[CAPSTONE CUSTOMER DATA PROJECT](#capstone-customer-data-project)
+
 ## POWER BI PROJECT
 ---
 
@@ -73,5 +75,196 @@ final visualization
 
 ### CAPSTONE SALES DATA PROJECT
 ![power bi capstone sales 1](https://github.com/user-attachments/assets/bb67a378-5798-4656-807a-83d04efce8ae)
+
+#### Sales by product
+
+![power bi capstone sales 2](https://github.com/user-attachments/assets/5e1847af-428f-4855-a8c9-76fc894d9470)
+- Gloves: sum of sales is 297k, 
+sum of unit price 35k,
+sum of quantity 12k, 
+total order is 1,484,
+Average sales 200.06,
+Gloves by region
+West 49,300 ,
+South 247,600,
+Percentage of sales by region 
+West 2.35%,
+South 11.78%
+
+![power bi capstone sales 3](https://github.com/user-attachments/assets/726ea62a-0cd4-4d87-aa9c-31063595ce2b)
+- HAT : sum of sales is 316,195
+sum of unit price 42k,
+sum of quantity 16k, 
+total order is 1,991,
+Average sales 158.81,
+Hat by region
+West 174,300,
+East 107,175,
+North 34,720,
+Percentage of sales by region 
+West 8.3%,
+East 5.1%,
+North 1.65%
+
+![power bi capstone sales 4](https://github.com/user-attachments/assets/8b4893d2-dfa3-49f5-91c4-fec2ce3a4a01)
+- JACKET : sum of sales 208,230
+sum of unit price 62k,
+sum of quantity 5,452,
+total order is 1,488,
+Average sales 139.94,
+Jacket by region
+East 103,950,
+North 104,280,
+Percentage of sales by region 
+East 4.95%,
+North 4.86%
+
+![power bi capstone sales 5](https://github.com/user-attachments/assets/55bf0092-5ffb-4a89-a882-13c3f3e887e1)
+- SHIRT : sum of sales is 485,600
+sum of unit price 55k,
+sum of quantity 12k, 
+total order is 1,487,
+Average sales 326.56,
+Shirt by region
+East 237,600,
+North 248,000,
+Percentage of sales by region 
+East 11.8%,
+North 11.31%
+
+![power bi capstone sales 6](https://github.com/user-attachments/assets/ccfd148a-87a6-4210-a1e0-7d9d89da3267)
+- SHOES : sum of sales is 613,320
+sum of unit price 70k,
+sum of quantity 14k,
+total order is 1,987,
+Average sales 308.67,
+Shoes by region
+West 29,820,
+East 37,200,
+South 546,300,
+Percentage of sales by region 
+West 1.42%,
+East 1.77%,
+South 26%
+
+![power bi capstone sales 7](https://github.com/user-attachments/assets/aa80c568-4d26-4d25-877e-4669e7597f6f)
+- SOCKS : sum of sales is 180,785,
+sum of unit price 27K,
+sum of quantity 7,921,
+total order is 1,484,
+Average Sales 121.82,
+Socks by region 
+West 46,865,
+South 133,920,
+Percentage of sales by region 
+West 2.23%,
+South 6.37%
+
+
+#### Capstone sales Data project 
+##### Sales by Region
+
+- East
+![power bi capstone sales 8](https://github.com/user-attachments/assets/7c763dab-034f-46f7-8bb9-b8bc33879f51)
+Sum of sales : 485,925,
+Sum of unit price : 57k,
+Sum of Quantity 20k,
+Total order 2,483,
+Percentage sales : 23.13%
+
+Total sale in East by products
+Hat 107,175,
+Jacket 103,950,
+Shirt 237,600,
+Shoes 37,200,
+
+Average sales in East by product
+Hat 107.50,
+Jacket 210,
+Shirt 480,
+Shoes 75,
+
+Count of sales in East by products
+Hat 997,
+Jacket 495,
+Shirt 495,
+Shoes 496
+
+- NORTH
+![power bi capstone sales 9](https://github.com/user-attachments/assets/37d12486-8e98-4a31-a09e-0e56f5e3ca35)
+Sum of sales : 387,000,
+Sum of unit price : 84k,
+Sum of Quantity 12k,
+Total order 2,481,
+Percentage sales : 18.42%
+
+Total sale in North by products
+Hat 34,720,
+Jacket 104, 280,
+Shirt 248,000,
+
+Average sales in North by product
+Hat 70,
+Jacket 105.02,
+Shirt 250,
+
+Count of sales in North by products
+Hat 496,
+Jacket 993,
+Shirt 992
+
+- South 
+![power bi capstone sales 10](https://github.com/user-attachments/assets/5a377039-41bb-4689-9808-a81523241f1a)
+Sum of sales : 927,820,
+Sum of unit price : 94k,
+Sum of Quantity 24k,
+Total order 2,480,
+Percentage sales : 44.16%,
+
+Total sale in south by products
+Gloves 247,600,
+Shoes 546,300,
+Socks 133,920,
+
+Average sales in South by product
+Gloves 249.85,
+Shoes 550.15,
+Socks 270
+
+Count of sales in South by products
+Gloves 991,
+Shoes 993,
+Socks 496,
+
+![power bi capstone sales 11](https://github.com/user-attachments/assets/73211398-62aa-4dbd-92dc-db3b25001197)
+- West
+Sum of sales : 300,285,
+Sum of unit price : 55k,
+Sum of Quantity 11k,
+Total order 2,477,
+Percentage sales : 14.29%,
+
+Total sale in West by products
+Gloves 49,300,
+Hat 174,300,
+Shoes 29,820,
+Socks 46,865,
+
+Average sales in West by product
+Gloves 100,
+Hat 350,
+Shoes 59.88,
+Socks 47.43,
+
+Count of sales in West by products
+Gloves 493,
+Hat 498,
+Shoes 498,
+Socks 988,
+
+
+
+### CAPSTONE CUSTOMER DATA PROJECT
+
 
 
