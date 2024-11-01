@@ -8,6 +8,26 @@
 
 [CAPSTONE CUSTOMER DATA PROJECT](#capstone-customer-data-project)
 
+[MICROSOFT EXCEL CAPSTONE PROJECT](#microsoft-excel-capstone-project)
+
+[MICROSOFT EXCEL CAPSTONE SALES DATA PROJECT](#microsoft-excel-capstone-sales-data-project)
+
+[MICROSOFT EXCEL CAPSTONE CUSTOMER DATA PROJECT](#microsoft-excel-capstone-customer-data-project)
+
+[STRUCTURED QUERY LANGUAGE SQL CAPSTONE PROJECT](#structured-query-language-sql-capstone-project)
+
+[STRUCTURED QUERY LANGUAGE SQL SALES DATA CAPSTONE PROJECT](#structured-query-language-sql-sales-data-capstone-project)
+
+[STRUCTURED QUERY LANGUAGE SQL CUSTOMER DATA CAPSTONE PROJECT](#structured-query-language-sql-customer-data-capstone-project)
+
+
+
+
+
+
+
+
+
 ## POWER BI PROJECT
 ---
 
@@ -400,3 +420,82 @@ True 10,111,406.
 3. West cancellation 
 false 6,752,970(40.04%),
 True 10,111,406(59.96%).
+
+
+
+## MICROSOFT EXCEL CAPSTONE PROJECT
+---
+
+### MICROSOFT EXCEL CAPSTONE SALES DATA PROJECT
+---
+![msexcel capstone data 1](https://github.com/user-attachments/assets/e5d3e951-273d-4a35-8669-cf4095f16de6)
+
+I used Excel formulas to calculate metrics such as average sales per product and total revenue by region
+the followig formulas were used
+
+AVERAGE SALES OF GLOVES			200.0673854	 =AVERAGEIF(C2:C9922,C7,H2:H9922)
+AVERAGE SALES OF HAT			158.8121547	 =AVERAGEIF(C2:C9922,C4,H2:H9922)
+AVERAGE SALES OF JACKET			139.9395161	 =AVERAGEIF(C2:C9922,C6,H2:H9922)
+AVERAGE SALES OF SHIRT			326.5635508	 =AVERAGEIF(C2:C9922,C8,H2:H9922)
+AVERAGE SALES OF SHOES			308.6663312	 =AVERAGEIF(C2:C9922,C3,H2:H9922)
+AVERAGE SALES OF SOCKS			121.8227763	 ==AVERAGEIF(C2:C9922,C5,H2:H9922)
+				
+TOTAL REVENUE IN THE  EAST			485925	 =SUMIF(D2:D9922,D4,H2:H9922)
+TOTAL REVENUE IN THE  NORTH			387000	 =SUMIF(D2:D9922,D6,H2:H9922)
+TOTAL REVENUE IN THE SOUTH			927820	 =SUMIF(D2:D9922,D3,H2:H9922)
+TOTAL REVENUE IN THE WEST			300285	 =SUMIF(D2:D9922,D5,H2:H9922)
+![image](https://github.com/user-attachments/assets/cae7a73a-efad-478b-9cbd-66dd2834c62c)
+
+- Data Exploration
+![msexcel capstone sales data 2](https://github.com/user-attachments/assets/5cb5c483-3e69-494e-aaa0-1e980ac66689)
+  
+I used pivot tables to Perform an initial exploration of the sales data in order to, summarize total sales by product, region, and month.
+I also created other interesting report
+
+
+### MICROSOFT EXCEL CAPSTONE CUSTOMER DATA PROJECT
+---
+![msexcel capstone customer data 1](https://github.com/user-attachments/assets/4700a1c7-5e7c-4c9c-be43-50f336180926)
+
+I used excel formulas to calculate the average subscription duration and identify the most popular 
+subscription types using the following formulas
+Average subcription duration	365.3498387	 =AVERAGE(I2:I33788)					
+							
+SubscriptionType							
+PREMIUM	8446	 =COUNTIF(D2:D33788,D3)					
+STANDARD	8420	 =COUNTIF(D2:D33788,D5)					
+BASIC	16921	 =COUNTIF(D2:D33788,D4)					
+							
+Highest Subscription Type = BASIC							
+							
+	AVERAGE SALES OF BASIC SUBSCRIPTION					1996.142958	 =AVERAGEIF(D2:D33788,D4,H2:H33788)
+	AVERAGE SALES OF STANDARD SUBSCRIPTION					2002.895012	 =AVERAGEIF(D2:D33788,D5,H2:H33788)
+	AVERAGE SALES OF PREMIUM SUBSCRIPTION					2000.836372	 =AVERAGEIF(D2:D33788,D3,H2:H33788)
+							
+	TOTAL REVENUE IN THE  EAST			16958763	 =SUMIF(C2:C33788,C4,H2:H33788)		
+	TOTAL REVENUE IN THE  NORTH			16817972	 =SUMIF(C2:33788,C6,H2:H33788)		
+	TOTAL REVENUE IN THE  SOUTH			16899064	 =SUMIF(C2:C33788,C3,H2:H33788)		
+	TOTAL REVENUE IN THE  WEST			16864376	 =SUMIF(C2:C33788,C5,H2:H33788)		
+![image](https://github.com/user-attachments/assets/366f402e-9634-4ac8-aeb8-aefac208cf46)
+
+
+- Data Analyzation
+  ![msexcel capstone customer data 2](https://github.com/user-attachments/assets/f4e9d97d-5433-4e35-98af-b7ac8322d267)
+
+I used pivot tables to analyze customer data Analyze customer subscription patterns
+
+![msexcel capstone customer data 3](https://github.com/user-attachments/assets/72d49995-9299-4258-832e-a38c980e6202)
+
+I created other interesting reports.
+
+
+
+## STRUCTURED QUERY LANGUAGE SQL CAPSTONE PROJECT
+---
+
+### STRUCTURED QUERY LANGUAGE SQL SALES DATA CAPSTONE PROJECT
+---
+
+### STRUCTURED QUERY LANGUAGE SQL CUSTOMER DATA CAPSTONE PROJECT
+---
+
