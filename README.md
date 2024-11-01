@@ -265,9 +265,13 @@ Socks 988,
 
 
 #### CAPSTONE CUSTOMER DATA PROJECT
-##### Revenue by Subscription Type
 
+![power bi capstone customer 8](https://github.com/user-attachments/assets/2fd43f3f-07fc-4f2f-adc1-4b14a0f785a3)
+
+##### Revenue by Subscription Type
 - Basic
+  ![power bi capstone custtomer 1](https://github.com/user-attachments/assets/83105546-a234-472e-b80c-ad18e2095ee0)
+
 Total customers 16.92k,
 Total revenue 34million, 
 Subscription trends,
@@ -287,7 +291,9 @@ North false 6,724,730(19.91%),
 North true 10,093,242 (29.88%),
 
 
-- Premium 
+- Premium
+  ![power bi capstone customer 2](https://github.com/user-attachments/assets/38bab8fe-3c23-4a83-ac55-ec6c848353db)
+
 Total customers 8,446,
 Total revenue 17million, 
 Subscription trends,
@@ -305,6 +311,8 @@ South true 10,126,800 (59.93%),
 
 
 - Standard 
+![power bi capstone customer 3](https://github.com/user-attachments/assets/9b4e1fb7-bdbf-4614-8665-3bb94eb476ce)
+
 Total customers 8,420,
 Total revenue 17million ,
 Subscription trends
@@ -322,6 +330,8 @@ West true 10,111,406 (59.96%),
 
 ##### Revenue by Region
 - East
+  ![power bi capstone customer 4](https://github.com/user-attachments/assets/3f709d35-a524-4dca-b0a3-5b495560d6a6)
+
 Total customer 8,488,
 Total revenue 17m,
 Subcription Trends by month
@@ -334,7 +344,9 @@ Basic :false 16,958,763,
 
 3. East cancellation is false 16,958,763(100%),
 
-- North 
+- North
+  ![power bi capstone customer 5](https://github.com/user-attachments/assets/5d54bf5b-2452-4265-a6c9-a8b465fccb83)
+
 Total customer 8,433,
 Total revenue 17m,
 Subcription Trends by month
@@ -352,6 +364,8 @@ false 6,724,730(39.99%),
 True 10,093,242(60.01%).
 
 - South 
+![power bi capstone customer 6](https://github.com/user-attachments/assets/a430f2a3-4dfe-4552-9cbe-042cd8e49382)
+
 Total customer 8,446,
 Total revenue 17m,
 Subcription Trends by month
@@ -369,6 +383,8 @@ false 6,772,264(40.07%),
 True 10, 126,800(59.93%).
 
 - West
+![power bi capstone customer 7](https://github.com/user-attachments/assets/37135dc6-6e3f-46d3-b865-d6dc5b411069)
+
 Total customer 8,420,
 Total revenue 17m,
 Subcription Trends by month
