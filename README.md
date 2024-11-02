@@ -498,52 +498,125 @@ I created other interesting reports.
 - Write queries to extract key insights based on the following questions. 
 1. retrieve the total sales for each product category.
    ![sql no 1 sales data](https://github.com/user-attachments/assets/4366cd24-5090-4586-a50a-9d1c88ba4bc4)
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM [dbo].[LITA Capstone sales data]
+GROUP BY Product;
 
 2. find the number of sales transactions in each region.
 ![sql no 2 sales data](https://github.com/user-attachments/assets/134ff942-c589-453a-b8e1-763a3c8e022f)
+SELECT Region, COUNT(OrderID) AS TransactionCount
+FROM [dbo].[LITA Capstone sales data]
+GROUP BY Region;
 
 3. find the highest-selling product by total sales value.
-   
+  ![SQL SALES DATA 3](https://github.com/user-attachments/assets/b42b994b-59ad-49cc-b964-f31ceef2917d)
+ SELECT TOP 1 Product, SUM(CAST(Quantity AS int) * CAST(UnitPrice AS int)) AS TotalSales
+FROM [dbo].[LITA Capstone sales data]
+GROUP BY Product
+ORDER BY TotalSales DESC;
+ 
 4. calculate total revenue per product.
-   ![sql no 4 sales data](https://github.com/user-attachments/assets/5861a143-26e9-4781-87ac-c38b1850d1e8)
+![sql no 4 sales data](https://github.com/user-attachments/assets/5861a143-26e9-4781-87ac-c38b1850d1e8)
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalRevenue
+FROM [dbo].[LITA Capstone sales data]
+GROUP BY Product;
 
-5 calculate monthly sales totals for the current year.
-![SQL NO 5 SALES DATA](https://github.com/user-attachments/assets/3b97f74b-c138-4731-9188-5d31fd416d15)
+
+5. calculate monthly sales totals for the current year.
+![sql sales data 5](https://github.com/user-attachments/assets/5058c3b8-deec-4acb-9cfb-89da2f456340)
+SELECT FORMAT(OrderDate, 'yyyy-MM') AS Month, 
+       SUM(CAST(Quantity AS int) * CAST(UnitPrice AS int)) AS MonthlySales
+FROM [dbo].[LITA Capstone Dataset  SQL 1 CSV]
+WHERE YEAR(OrderDate) = YEAR(GETDATE())
+GROUP BY FORMAT(OrderDate, 'yyyy-MM');
+
 
 6. find the top 5 customers by total purchase amount.
-![sql no 6 sales data](https://github.com/user-attachments/assets/a7cbed59-0ad1-4f24-9024-01fb2020e26a)
-   
+![SQL SALES DATA 6](https://github.com/user-attachments/assets/965ece4e-0e2a-4b24-8986-92b0f3ccb7c7)
+SELECT TOP 5 "Customer_Id", SUM(CAST(Quantity AS int) * CAST(UnitPrice AS int)) AS TotalPurchase
+FROM [dbo].[LITA Capstone sales data]
+GROUP BY "Customer_Id"
+ORDER BY TotalPurchase DESC;
+
 7. calculate the percentage of total sales contributed by each region.
- ![sql no 7 sales data](https://github.com/user-attachments/assets/9e21f301-c040-4389-8685-659f06667698)
+![sql sales data 7](https://github.com/user-attachments/assets/ab99a2b7-2156-4925-95ea-8fdf42d0d958)
+ WITH RegionalSales AS (
+    SELECT Region, 
+           CAST(SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS INT)) AS INT) AS RegionSales
+    FROM [dbo].[LITA Capstone Dataset  SQL 1 CSV]
+    GROUP BY Region
+)
+SELECT Region, 
+       RegionSales,
+       (CAST(RegionSales AS FLOAT) * 100.0 / CAST((SELECT SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS INT)) FROM [dbo].[LITA Capstone Dataset  SQL 1 CSV]) AS INT)) AS SalesPercentage
+FROM RegionalSales;
 
 8. identify products with no sales in the last quarter.
-   
+![sql sales data 8](https://github.com/user-attachments/assets/a2a6913d-a974-45e2-9a5a-98fa947c9222)
+SELECT DISTINCT Product
+FROM [dbo].[LITA Capstone Dataset  SQL 1 CSV]
+WHERE Product NOT IN (
+    SELECT Product
+    FROM [dbo].[LITA Capstone Dataset  SQL 1 CSV]
+    WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE())
+);
 ### STRUCTURED QUERY LANGUAGE SQL CUSTOMER DATA CAPSTONE PROJECT
 ---
 - Write queries to extract key insights based on the following questions. 
-1. retrieve the total number of customers from each region.
-![SQL No1 Customer data](https://github.com/user-attachments/assets/b75c7d5f-1fb6-41e1-838c-b344c205236c)
-   
+1. retrieve the total number of customers from each region
+![SQL CUSTOMER](https://github.com/user-attachments/assets/82123e63-1a2a-42a2-94c7-f5618bc61336)
+SELECT region, COUNT([CustomerID]) AS total_customers
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV]
+GROUP BY region;
+
 2. find the most popular subscription type by the number of customers.
-![SQL No2 Customer data](https://github.com/user-attachments/assets/84a0fe5a-f2dc-4241-ad30-d041b6de192f)
+![SQL CUSTOMER 2](https://github.com/user-attachments/assets/3e8db77d-1c00-4173-851e-078aa526d4a7)
+SELECT TOP 1 SubscriptionType, COUNT(CustomerID) AS customer_count
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV]
+GROUP BY SubscriptionType
+ORDER BY customer_count DESC;
 
 3. find customers who canceled their subscription within 6 months.
-![SQL No3 Customer data](https://github.com/user-attachments/assets/20e18806-c05f-4cd1-95bc-7466c5acd650)
+![SQL CUSTOMER 3](https://github.com/user-attachments/assets/789249dc-0fdb-4b98-8e85-10e1fca2388e)
+- no customer cancelled his subcription in less than 6 months
+SELECT CustomerID, CustomerName
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV]
+WHERE Canceled = 'TRUE'
+  AND DATEDIFF(month, SubscriptionStart, SubscriptionEnd) <= 6;
 
 4. calculate the average subscription duration for all customers.
-![SQL No4 Customer data](https://github.com/user-attachments/assets/d9d7673e-fbe6-4aa2-9277-59e09d44d7f7)
-   
+![SQL CUSTOMER 4](https://github.com/user-attachments/assets/1f2c10c3-47e1-497d-930c-a760b63527e9)
+SELECT AVG(DATEDIFF(month, SubscriptionStart, SubscriptionEnd)) AS avg_subscription_duration
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV];
+
 5. find customers with subscriptions longer than 12 months.
-![SQL No5 Customer data](https://github.com/user-attachments/assets/bde417cf-852c-4073-b435-0496e7ef3211)
+![SQL CUSTOMER 5](https://github.com/user-attachments/assets/a59f5256-cee1-4e87-80aa-427f9e6fb928)
+no customer subcribed for more than 12 months 
+SELECT CustomerID, CustomerName
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV]
+WHERE DATEDIFF(month, SubscriptionStart, SubscriptionEnd) > 12;
 
 6. calculate total revenue by subscription type.
-![SQL No6 Customer data](https://github.com/user-attachments/assets/831f388f-f26b-4ee3-80fd-902cc1167a32)
+![SQL CUSTOMER 6](https://github.com/user-attachments/assets/6dcab8c5-39a0-47ad-90d5-0ad32ba54e81)
+SELECT SubscriptionType, SUM(Revenue) AS total_revenue
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV]
+GROUP BY SubscriptionType;
 
 7. find the top 3 regions by subscription cancellations.
-![SQL No7 Customer data](https://github.com/user-attachments/assets/be8ac04d-b77e-4073-8d69-c42fa7ab6357)
+![SQL CUSTOMER 7](https://github.com/user-attachments/assets/cca0f28d-af05-4c2d-aa33-2fe22fbbbc7f)
+SELECT TOP 3 Region, COUNT(CustomerID) AS cancellation_count
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV]
+WHERE Canceled = 'True'
+GROUP BY Region
+ORDER BY cancellation_count DESC;
 
- 8. find the total number of active and canceled subscriptions.
-![SQL No8 Customer data](https://github.com/user-attachments/assets/7323e42b-73ea-4c01-aa1b-76e551bb25a1)
+8. find the total number of active and canceled subscriptions.
+![SQL CUSTOMER 8](https://github.com/user-attachments/assets/b6352c72-b440-49d2-9479-6899073ff913)
+
+SELECT 
+    COUNT(CASE WHEN Canceled = 'False' THEN 1 END) AS active_subscriptions,
+    COUNT(CASE WHEN Canceled = 'True' THEN 1 END) AS canceled_subscriptions
+FROM [dbo].[LITA Capstone Dataset  SQL 2 CSV];
 
 
 
