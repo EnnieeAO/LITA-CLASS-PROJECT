@@ -522,20 +522,28 @@ I created other interesting reports.
 ---
 - Write queries to extract key insights based on the following questions. 
 1. retrieve the total number of customers from each region.
+![SQL No1 Customer data](https://github.com/user-attachments/assets/b75c7d5f-1fb6-41e1-838c-b344c205236c)
    
 2. find the most popular subscription type by the number of customers.
+![SQL No2 Customer data](https://github.com/user-attachments/assets/84a0fe5a-f2dc-4241-ad30-d041b6de192f)
 
 3. find customers who canceled their subscription within 6 months.
+![SQL No3 Customer data](https://github.com/user-attachments/assets/20e18806-c05f-4cd1-95bc-7466c5acd650)
 
 4. calculate the average subscription duration for all customers.
+![SQL No4 Customer data](https://github.com/user-attachments/assets/d9d7673e-fbe6-4aa2-9277-59e09d44d7f7)
    
 5. find customers with subscriptions longer than 12 months.
+![SQL No5 Customer data](https://github.com/user-attachments/assets/bde417cf-852c-4073-b435-0496e7ef3211)
 
 6. calculate total revenue by subscription type.
+![SQL No6 Customer data](https://github.com/user-attachments/assets/831f388f-f26b-4ee3-80fd-902cc1167a32)
 
 7. find the top 3 regions by subscription cancellations.
+![SQL No7 Customer data](https://github.com/user-attachments/assets/be8ac04d-b77e-4073-8d69-c42fa7ab6357)
 
  8. find the total number of active and canceled subscriptions.
+![SQL No8 Customer data](https://github.com/user-attachments/assets/7323e42b-73ea-4c01-aa1b-76e551bb25a1)
 
 
 
