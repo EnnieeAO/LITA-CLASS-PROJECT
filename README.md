@@ -495,7 +495,49 @@ I created other interesting reports.
 
 ### STRUCTURED QUERY LANGUAGE SQL SALES DATA CAPSTONE PROJECT
 ---
+- Write queries to extract key insights based on the following questions. 
+1. retrieve the total sales for each product category.
+   ![sql no 1 sales data](https://github.com/user-attachments/assets/4366cd24-5090-4586-a50a-9d1c88ba4bc4)
 
+2. find the number of sales transactions in each region.
+![sql no 2 sales data](https://github.com/user-attachments/assets/134ff942-c589-453a-b8e1-763a3c8e022f)
+
+3. find the highest-selling product by total sales value.
+   
+4. calculate total revenue per product.
+   ![sql no 4 sales data](https://github.com/user-attachments/assets/5861a143-26e9-4781-87ac-c38b1850d1e8)
+
+5 calculate monthly sales totals for the current year.
+![SQL NO 5 SALES DATA](https://github.com/user-attachments/assets/3b97f74b-c138-4731-9188-5d31fd416d15)
+
+6. find the top 5 customers by total purchase amount.
+![sql no 6 sales data](https://github.com/user-attachments/assets/a7cbed59-0ad1-4f24-9024-01fb2020e26a)
+   
+7. calculate the percentage of total sales contributed by each region.
+ ![sql no 7 sales data](https://github.com/user-attachments/assets/9e21f301-c040-4389-8685-659f06667698)
+
+8. identify products with no sales in the last quarter.
+   
 ### STRUCTURED QUERY LANGUAGE SQL CUSTOMER DATA CAPSTONE PROJECT
 ---
+- Write queries to extract key insights based on the following questions. 
+1. retrieve the total number of customers from each region.
+   
+2. find the most popular subscription type by the number of customers.
+
+3. find customers who canceled their subscription within 6 months.
+
+4. calculate the average subscription duration for all customers.
+   
+5. find customers with subscriptions longer than 12 months.
+
+6. calculate total revenue by subscription type.
+
+7. find the top 3 regions by subscription cancellations.
+
+ 8. find the total number of active and canceled subscriptions.
+
+
+
+
 
